@@ -1,0 +1,38 @@
+# --- Environment Variables & Secrets ---
+.env
+.env.local
+.env.*.local
+secret.json
+
+# --- Dependency Folders ---
+node_modules/
+dist/
+build/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- IDE & Editor Configs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Logs & Debugging ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- OS Artifacts ---
+.DS_Store
+Thumbs.db
+
+# --- Build & Output ---
+out/
+coverage/
+*.bak
