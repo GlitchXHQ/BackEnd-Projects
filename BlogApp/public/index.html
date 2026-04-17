@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivek Chauhan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <header class="hero section">
+    <nav class="navbar container">
+      <h1 class="brand">Vivek Chauhan</h1>
+      <div class="badges">
+        <span>Full-Stack Developer</span>
+        <span>AI Enthusiast</span>
+        <span>Problem Solver</span>
+      </div>
+    </nav>
+
+    <div class="hero-content container">
+      <p class="hero-subtitle">Full-Stack Developer | AI Enthusiast | Gamer | Problem Solver | Team Player</p>
+      <h2>Building practical products with code, creativity, and AI.</h2>
+      <p class="hero-intro">
+        I am Vivek Chauhan, a driven full-stack developer focused on turning ideas into scalable and user-friendly digital products.
+        I blend modern web development with AI-powered thinking to build impactful experiences, solve real-world problems, and
+        collaborate effectively with teams to deliver meaningful outcomes.
+      </p>
+      <a href="#projects" class="primary-btn">View My Work</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="timeline" class="timeline section container">
+      <h3>Timeline</h3>
+      <div class="timeline-track">
+        <article class="timeline-item">
+          <span>2020 - 21</span>
+          <p>Python Project Runner Up</p>
+        </article>
+        <article class="timeline-item">
+          <span>2021 - 22</span>
+          <p>Python Quiz Winner</p>
+        </article>
+        <article class="timeline-item">
+          <span>2022 - 23</span>
+          <p>FrontEnd Web Developer Certification</p>
+        </article>
+        <article class="timeline-item">
+          <span>2023 - 24</span>
+          <p>Created 2 websites for GovindamSweets and SuccessAcademy</p>
+        </article>
+        <article class="timeline-item">
+          <span>2024 - 25</span>
+          <p>TechStack Hackathon Winner</p>
+        </article>
+        <article class="timeline-item">
+          <span>2024 - 25</span>
+          <p>Full Stack Web Development Certification</p>
+        </article>
+        <article class="timeline-item">
+          <span>2025 - 26</span>
+          <p>AI &amp; Cloud Intern - Edunet Foundation</p>
+        </article>
+        <article class="timeline-item">
+          <span>2025 - 26</span>
+          <p>Web Developer Intern - Regem Enterprises</p>
+        </article>
+        <article class="timeline-item">
+          <span>2025 - 26</span>
+          <p>Machine Learning Certification - Columbia University</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tech-stack" class="section container">
+      <h3>Tech Stack</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><p>MONGO</p><div class="bar"><span style="--w:80%;">80%</span></div></div>
+        <div class="skill-card"><p>EXPRESS</p><div class="bar"><span style="--w:80%;">80%</span></div></div>
+        <div class="skill-card"><p>NODE</p><div class="bar"><span style="--w:85%;">85%</span></div></div>
+        <div class="skill-card"><p>REACT JS</p><div class="bar"><span style="--w:90%;">90%</span></div></div>
+        <div class="skill-card"><p>TAILWIND CSS</p><div class="bar"><span style="--w:90%;">90%</span></div></div>
+        <div class="skill-card"><p>NEXT JS</p><div class="bar"><span style="--w:75%;">75%</span></div></div>
+        <div class="skill-card"><p>HTML, CSS, JS</p><div class="bar"><span style="--w:90%;">90%</span></div></div>
+        <div class="skill-card"><p>GSAP</p><div class="bar"><span style="--w:80%;">80%</span></div></div>
+        <div class="skill-card"><p>FRAMER MOTION</p><div class="bar"><span style="--w:80%;">80%</span></div></div>
+        <div class="skill-card"><p>BOOTSTRAP</p><div class="bar"><span style="--w:90%;">90%</span></div></div>
+        <div class="skill-card"><p>ML ALGORITHMS</p><div class="bar"><span style="--w:70%;">70%</span></div></div>
+        <div class="skill-card"><p>AI ALGORITHMS</p><div class="bar"><span style="--w:70%;">70%</span></div></div>
+        <div class="skill-card"><p>LLM</p><div class="bar"><span style="--w:60%;">60%</span></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h3>Projects</h3>
+      <p class="section-note">Click any project card to open detailed info in the side panel.</p>
+      <div class="projects-grid">
+        <button class="project-card" data-project="studynotion">StudyNotion</button>
+        <button class="project-card" data-project="talentra">Talentra</button>
+        <button class="project-card" data-project="ai-chatbot">AI Chatbot</button>
+        <button class="project-card" data-project="auth-system">Authentication System</button>
+        <button class="project-card" data-project="employee-system">Employee Management System</button>
+        <button class="project-card" data-project="react-folder">React Project Folder</button>
+        <button class="project-card" data-project="backend-folder">Backend Project Folder</button>
+      </div>
+    </section>
+
+    <section class="subscribe section container">
+      <h3>Let us build something amazing together</h3>
+      <p>Subscribe for updates on my latest projects, AI experiments, and development insights.</p>
+      <form id="subscribeForm" class="subscribe-form">
+        <input type="email" id="email" placeholder="Enter your email address" required />
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+      </form>
+      <small id="subscribeMessage" aria-live="polite"></small>
+    </section>
+  </main>
+
+  <aside id="projectSidebar" class="project-sidebar" aria-hidden="true">
+    <button id="closeSidebar" class="close-sidebar" aria-label="Close sidebar">&times;</button>
+    <h4 id="sidebarTitle">Project Title</h4>
+    <p id="sidebarDescription">Project description will appear here.</p>
+    <a id="sidebarLink" href="#" target="_blank" rel="noreferrer">Go to project</a>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

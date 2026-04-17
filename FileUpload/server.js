@@ -1,17 +1,30 @@
-const express=require('express')
+const express=require('express');
 const app=express()
+const database=require('./config/database')
+const {connectCloudinary}=require('./config/cloudinary')
+const fileRoutes=require('./routes/file')
+const fileUpload = require('express-fileupload');
+
+const PORT=process.env.PORT || 3000
+
+app.use(express.json())
+app.use(fileUpload({
+    useTempFiles:true,
+    tempFileDir:'./temp'
+}))
 
 require('dotenv').config()
-const PORT=process.env.PORT || 4000
 
-//Middlewares
-app.use(express.json())
-
-//Server Start
-app.listen(PORT,()=>{
-    console.log("App is Running Smoothly at PORT: ",PORT)
-})
+database()
+connectCloudinary()
 
 app.get('/',(req,res)=>{
-    res.send("Hello Server")
+    res.send('Hello World')
+})
+
+app.use('/api/v1/files',fileRoutes)
+
+
+app.listen(PORT,()=>{
+    console.log(`Server is running on port ${PORT}`)
 })
